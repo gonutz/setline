@@ -30,7 +30,7 @@ func main() {
 			newLine = append(newLine, '\r')
 		}
 		lines[i] = newLine
-		output := bytes.Join(lines, []byte{'\n'})
-		fmt.Printf("%s", output)
 	}
+	output := bytes.Join(lines, []byte{'\n'})
+	fmt.Printf("%s", output)
 }
